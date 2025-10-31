@@ -50,7 +50,7 @@ const Chat = () => {
     setchat((prev) => [...prev, { id:Date.now(),text: msg, sender: "you" },    ]);
     try{
       
-      const res=await axios.post("http://localhost:5000/chat/prompt",{
+      const res=await axios.post("https://ai-forge-webs.onrender.com/chat/prompt",{
         prompt:msg,
         personaName:selectedPersona.name
 

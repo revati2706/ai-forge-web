@@ -83,5 +83,5 @@ It’s still growing, but it already means a lot to me.
 Every small bug fixed or feature added taught me something new.
 
 If you like this, maybe drop a ⭐ — it helps and means more than you think.
-
-### “Every idea starts small. This one just happens to talk back.”
+---
+## “Every idea starts small. This one just happens to talk back.”

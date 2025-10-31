@@ -63,6 +63,7 @@ npm start
 
 Once it starts, open the link shown in your terminal (usually http://localhost:5173
 ).
+```
 
 ## 🌠 Future Plans
 

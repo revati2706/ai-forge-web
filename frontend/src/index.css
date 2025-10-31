@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+/* ☀️ Light Theme — Clean & Balanced */
+body.light {
+  --bg-color: #f6f7f8;        /* Very soft neutral */
+  --text-color: #1e293b;      /* Deep slate for readable text */
+  --accent-color: #3b82f6;    /* Subtle Tailwind blue (used sparingly) */
+  --border-color: #d1d5db;    /* Light border */
+  --input-bg: #ffffff;
+  --textarea-bg: #ffffff;
+}
+
+/* 🌙 Dark Theme — Calm, Neutral with a Hint of Blue */
+body.dark {
+  --bg-color: #151515;        /* Charcoal black base */
+  --text-color: #e5e7eb;      /* Soft gray text */
+  --accent-color: #4b9ce2;    /* Muted, low-saturation blue accent */
+  --border-color: #262626;    /* Subtle gray borders */
+  --input-bg: #1e1e1e;        /* Darker gray for inputs */
+  --textarea-bg: #1e1e1e;
+}
+
+/* 🌍 Global Styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.4s ease;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+/* 🔘 Buttons */
+.btn {
+  background-color: var(--border-color);
+  color: var(--text-color);
+  border: 1.5px solid var(--border-color);
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  transform: scale(1.03);
+}
+
+/* 📦 Cards */
+.card {
+  background-color: var(--input-bg);
+  border: 1.5px solid var(--border-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+/* ✏️ Input fields */
+input {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border: 1.5px solid var(--border-color);
+  border-radius: 10px;
+  height: 3rem;
+  width: 29rem;
+  padding: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 4px var(--accent-color);
+}
+
+/* 📝 Textareas */
+textarea {
+  background-color: var(--textarea-bg);
+  border: 1.5px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--text-color);
+  padding: 20px;
+  outline: none;
+  width: 29rem;
+  transition: all 0.3s ease;
+  resize: none;
+}
+
+textarea:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 4px var(--accent-color);
+}
+
+/* 🌟 Utility spacing */
+.container {
+  padding: 2rem;
+}
+
+/* 🔍 Custom Search Bar */
+.searchBar {
+  width: 11rem;
+  height: 30px; 
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 100;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border: 1.5px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.searchBar:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 4px var(--accent-color);
+}
+
+/* 📱 Responsive searchBar */
+@media (max-width: 768px) {
+  .searchBar {
+    width: 80%;
+    height: 2.2rem;
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .searchBar {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+

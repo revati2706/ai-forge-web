@@ -6,7 +6,7 @@ import personaRoutes from "./routes/personaRoutes.js";
 const app = express();
 
 app.use(cors({
-  origin: "https://ai-forge-web.netlify.app", // your Netlify frontend
+  origin: "https://ai-forge-web.netlify.app", // your Netlify frontend 
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));

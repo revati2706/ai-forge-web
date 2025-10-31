@@ -64,18 +64,18 @@ npm start
 Once it starts, open the link shown in your terminal (usually http://localhost:5173
 ).
 
-🌠 Future Plans
+## 🌠 Future Plans
 
-Add character memory and emotions
+- Add character memory and emotions
 
-Better chat UI and animations
+- Better chat UI and animations
 
-Improve personality depth and AI replies
+- Improve personality depth and AI replies
 
-Maybe add login and save chats
+- Maybe add login and save chats
 
 
-👨‍💻 About
+## 👨‍💻 About
 
 I made this project while learning to build real-world full stack apps.
 It’s still growing, but it already means a lot to me.
@@ -84,4 +84,4 @@ Every small bug fixed or feature added taught me something new.
 
 If you like this, maybe drop a ⭐ — it helps and means more than you think.
 
-“Every idea starts small. This one just happens to talk back.”
+### “Every idea starts small. This one just happens to talk back.”

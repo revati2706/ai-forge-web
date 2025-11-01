@@ -2,10 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "AI Forge backend running on Vercel",
-  "main": "api/server.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node api/server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",

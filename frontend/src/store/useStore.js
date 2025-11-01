@@ -9,7 +9,7 @@ export const useStore = create((set,get) => ({
 
   fetchPersonas: async () => {
     try {
-      const res = await axios.get("/api/personas");
+      const res = await axios.get("https://ai-forge-web.onrender.com/personas");
       set({ personas: res.data,filteredPersona:res.data });
     } catch (err) {
       console.error("Error fetching personas:", err);
@@ -18,7 +18,7 @@ export const useStore = create((set,get) => ({
 
   addPersona: async (persona) => {
     try {
-      const res = await axios.post("/api/personas", persona);
+      const res = await axios.post("https://ai-forge-web.onrender.com/personas", persona);
       set((state) => ({
         personas: [...state.personas, res.data],
 

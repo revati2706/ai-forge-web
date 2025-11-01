@@ -6,7 +6,7 @@ import personaRoutes from "./routes/personaRoutes.js";
 const app = express();
 
 app.use(cors({
-  origin: ["*"], 
+  origin: ["https://ai-forge-web-frontend.vercel.app/"], 
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
